@@ -13,6 +13,7 @@ const ROOT = process.cwd();
 const DATA_DIR = resolve(ROOT, 'data');
 const CACHE_DIR = resolve(ROOT, '.cache');
 const SCAN_HISTORY_PATH = resolve(DATA_DIR, 'scan-history.tsv');
+const PIPELINE_PATH = resolve(DATA_DIR, 'pipeline.md');
 const STATE_PATH = resolve(ROOT, process.env.SCAN_NOTIFY_STATE_PATH || '.cache/scan-notify-state.json');
 const MAX_MESSAGE_OFFERS = Number(process.env.SCAN_NOTIFY_MAX_OFFERS || '8');
 const TELEGRAM_NOTIFY_ON_EMPTY = process.env.TELEGRAM_NOTIFY_ON_EMPTY === 'true';
@@ -58,6 +59,19 @@ function writeSyntheticScanHistory(state) {
     ].join('\t'));
   }
   writeFileSync(SCAN_HISTORY_PATH, `${lines.join('\n')}\n`, 'utf-8');
+}
+
+function ensurePipelineFile() {
+  if (existsSync(PIPELINE_PATH)) {
+    return;
+  }
+
+  mkdirSync(DATA_DIR, { recursive: true });
+  writeFileSync(
+    PIPELINE_PATH,
+    '# Pipeline\n\n## Pendientes\n\n## Procesadas\n',
+    'utf-8',
+  );
 }
 
 function readScanHistory() {
@@ -239,10 +253,11 @@ async function main() {
   const managedFiles = shouldRestoreLocalFiles
     ? {
         scanHistory: snapshotFile(SCAN_HISTORY_PATH),
-        pipeline: snapshotFile(resolve(DATA_DIR, 'pipeline.md')),
+        pipeline: snapshotFile(PIPELINE_PATH),
       }
     : null;
 
+  ensurePipelineFile();
   writeSyntheticScanHistory(previousState);
   const baselineEntries = readScanHistory();
   const baselineUrls = new Set(baselineEntries.map((entry) => entry.url));
@@ -280,7 +295,7 @@ async function main() {
   } finally {
     if (managedFiles) {
       restoreFile(SCAN_HISTORY_PATH, managedFiles.scanHistory);
-      restoreFile(resolve(DATA_DIR, 'pipeline.md'), managedFiles.pipeline);
+      restoreFile(PIPELINE_PATH, managedFiles.pipeline);
     }
   }
 }
