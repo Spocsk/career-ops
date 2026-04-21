@@ -18,7 +18,6 @@ jds/*
 
 # User config and customization (never auto-updated)
 config/profile.yml
-portals.yml
 modes/_profile.md
 .update-dismissed
 .update-lock
@@ -28,6 +27,7 @@ modes/_profile.md
 
 # Generated
 .resolved-prompt-*
+.cache/
 node_modules/
 bun.lock
 

@@ -1,0 +1,51 @@
+name: Career Ops Telegram Scan
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 7 * * *'
+
+concurrency:
+  group: career-ops-scan-telegram
+  cancel-in-progress: false
+
+jobs:
+  scan-and-notify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Restore cloud scan state
+        uses: actions/cache/restore@v4
+        with:
+          path: .cache/scan-notify-state.json
+          key: career-ops-scan-state-${{ github.run_id }}
+          restore-keys: |
+            career-ops-scan-state-
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run cloud scan and notify Telegram
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          SCAN_NOTIFY_STATE_PATH: .cache/scan-notify-state.json
+        run: node scan-and-notify.mjs
+
+      - name: Save cloud scan state
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: .cache/scan-notify-state.json
+          key: career-ops-scan-state-${{ github.run_id }}

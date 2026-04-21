@@ -71,6 +71,33 @@ node cv-sync-check.mjs      # Check configuration
 node verify-pipeline.mjs     # Check pipeline integrity
 ```
 
+## Cloud Scan + Telegram Alerts
+
+If you want a cloud-native recurring scan without depending on a local Codex worktree, use the included GitHub Actions workflow at `.github/workflows/scan-telegram.yml`.
+
+### Required GitHub Actions secrets
+
+- `TELEGRAM_BOT_TOKEN`: your Telegram bot token from BotFather
+- `TELEGRAM_CHAT_ID`: the destination chat ID or your user ID
+
+`portals.yml` is read directly from the repository, so commit the version you want the cloud scan to use.
+
+### How it works
+
+1. GitHub Actions checks out the repo on a schedule.
+2. It runs `node scan-and-notify.mjs`.
+3. The wrapper persists a small dedup cache in `.cache/scan-notify-state.json` via GitHub Actions cache, so repeated runs do not keep re-sending the same offers.
+
+### Local dry-run test
+
+```bash
+export TELEGRAM_BOT_TOKEN=...
+export TELEGRAM_CHAT_ID=...
+npm run scan:notify -- --no-send
+```
+
+The default cron is `0 7 * * *` (07:00 UTC every day). Adjust it in `.github/workflows/scan-telegram.yml` to match your preferred cadence.
+
 ## Build Dashboard (Optional)
 
 ```bash

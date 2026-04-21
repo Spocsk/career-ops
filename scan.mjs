@@ -134,6 +134,18 @@ function buildTitleFilter(titleFilter) {
   };
 }
 
+function buildLocationFilter(locationFilter) {
+  const include = (locationFilter?.include || []).map(k => k.toLowerCase());
+  const exclude = (locationFilter?.exclude || []).map(k => k.toLowerCase());
+
+  return (location = '') => {
+    const lower = location.toLowerCase();
+    const matchesInclude = include.length === 0 || include.some(k => lower.includes(k));
+    const matchesExclude = exclude.some(k => lower.includes(k));
+    return matchesInclude && !matchesExclude;
+  };
+}
+
 // ── Dedup ───────────────────────────────────────────────────────────
 
 function loadSeenUrls() {
@@ -264,6 +276,7 @@ async function main() {
   const config = parseYaml(readFileSync(PORTALS_PATH, 'utf-8'));
   const companies = config.tracked_companies || [];
   const titleFilter = buildTitleFilter(config.title_filter);
+  const locationFilter = buildLocationFilter(config.location_filter);
 
   // 2. Filter to enabled companies with detectable APIs
   const targets = companies
@@ -284,7 +297,8 @@ async function main() {
   // 4. Fetch all APIs
   const date = new Date().toISOString().slice(0, 10);
   let totalFound = 0;
-  let totalFiltered = 0;
+  let totalFilteredTitle = 0;
+  let totalFilteredLocation = 0;
   let totalDupes = 0;
   const newOffers = [];
   const errors = [];
@@ -298,7 +312,11 @@ async function main() {
 
       for (const job of jobs) {
         if (!titleFilter(job.title)) {
-          totalFiltered++;
+          totalFilteredTitle++;
+          continue;
+        }
+        if (!locationFilter(job.location || '')) {
+          totalFilteredLocation++;
           continue;
         }
         if (seenUrls.has(job.url)) {
@@ -334,7 +352,8 @@ async function main() {
   console.log(`${'━'.repeat(45)}`);
   console.log(`Companies scanned:     ${targets.length}`);
   console.log(`Total jobs found:      ${totalFound}`);
-  console.log(`Filtered by title:     ${totalFiltered} removed`);
+  console.log(`Filtered by title:     ${totalFilteredTitle} removed`);
+  console.log(`Filtered by location:  ${totalFilteredLocation} removed`);
   console.log(`Duplicates:            ${totalDupes} skipped`);
   console.log(`New offers added:      ${newOffers.length}`);
 

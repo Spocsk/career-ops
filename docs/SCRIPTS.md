@@ -18,6 +18,8 @@ All scripts live in the project root as `.mjs` modules and are exposed via `npm 
 | `npm run rollback` | `update-system.mjs rollback` | Rollback last update |
 | `npm run liveness` | `check-liveness.mjs` | Test if job URLs are still active |
 | `npm run scan` | `scan.mjs` | Zero-token portal scanner |
+| `npm run scan:notify` | `scan-and-notify.mjs` | Run the scanner and send a Telegram summary |
+| `npm run telegram:notify` | `telegram-notify.mjs` | Send a Telegram message from env vars or stdin |
 
 ---
 
@@ -187,3 +189,40 @@ npm run scan
 ```
 
 **Exit codes:** `0` scan completed, `1` configuration error or no portals.yml found.
+
+---
+
+## scan:notify
+
+Cloud-friendly wrapper around `scan.mjs`. It restores a lightweight history cache from `.cache/scan-notify-state.json`, rehydrates `data/scan-history.tsv` so duplicate detection still works in ephemeral CI environments, runs the normal scan, and sends a Telegram summary when new offers are found.
+
+```bash
+npm run scan:notify
+npm run scan:notify -- --company OpenAI
+npm run scan:notify -- --no-send
+```
+
+**Environment variables:**
+
+| Variable | Required | Purpose |
+|----------|----------|---------|
+| `TELEGRAM_BOT_TOKEN` | Yes (unless `--no-send`) | Telegram bot token |
+| `TELEGRAM_CHAT_ID` | Yes (unless `--no-send`) | Chat or user ID to receive notifications |
+| `SCAN_NOTIFY_STATE_PATH` | No | Override cache file path |
+| `SCAN_NOTIFY_MAX_OFFERS` | No | Limit the number of offers rendered in Telegram (default `8`) |
+| `TELEGRAM_NOTIFY_ON_EMPTY` | No | Set to `true` to also send "no new offers" summaries |
+
+**Exit codes:** `0` scan completed and optional notification sent, `1` scan or Telegram delivery failed.
+
+---
+
+## telegram:notify
+
+Sends a plain Telegram message using `TELEGRAM_BOT_TOKEN` and `TELEGRAM_CHAT_ID`. Use `--message` or pipe text on stdin.
+
+```bash
+npm run telegram:notify -- --message "career-ops test"
+printf 'career-ops test\n' | npm run telegram:notify
+```
+
+**Exit codes:** `0` message sent, `1` missing credentials or Telegram API failure.
