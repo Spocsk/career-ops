@@ -1,0 +1,48 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "JobPosting",
+  "title": "Senior Software Engineer (Rust) ",
+  "description": "<h2><strong>About us</strong></h2><p style=\"min-height:1.5em\">Founded in 2019 and part of Y Combinator's 2020 cohort, <a target=\"_blank\" rel=\"noopener noreferrer\" class=\"c-link c-link--focus-visible c-link--underline\" href=\"https://www.photoroom.com\"><u>Photoroom</u></a>  is the leading visual solution for e-commerce.<br /><br />We've raised Series B funding and reached 300+ million users worldwide, processing over 5 billion images annually and serving both small businesses and major enterprises like Amazon, DoorDash, and Decathlon through our mobile app, web platform, and API.<br /><br />We're a remote-friendly team of 100+ passionate builders giving e-commerce businesses superpowers to create visuals that help them grow, making the hardest parts of selling online disappear. We focus on craft, innovation, and collaboration, creating exceptional impact for e-commerce businesses worldwide.<br /><br /></p><p style=\"min-height:1.5em\">🤓 We are looking for a strong Rust software engineer to help us develop the cross-platform libraries that power our Android, iOS and Web apps to the next level! It is the opportunity to work in a central position in the engineering team, on all incarnations of a product used by millions of people, solve complex challenges, and make a decisive difference to our users and Photoroom.<br /><br /></p><p style=\"min-height:1.5em\">💰 90k - 120k* + Stock-Options/BSPCE</p><p style=\"min-height:1.5em\">🇪🇺 We are flexible: You can work from Germany, UK, Italy, France, Ireland, Portugal or Spain, with monthly Paris office visits (fully reimbursed)</p><p style=\"min-height:1.5em\">✈️ We offer substantial support for relocation (10k€ relocation bonus), including finding an apartment in Paris and supporting you with the visa procedure.</p><p style=\"min-height:1.5em\">🏖️ Socials - Bi-annual company retreats, weekly Happy Hour &amp; Game Time</p><p style=\"min-height:1.5em\">🇬🇧 Photoroom is an international team and we work in English. We offer language lessons for those who need them (English &amp; French).</p><p style=\"min-height:1.5em\">*<em>We can go higher for outstanding profiles and adapt to the cost of living if it is higher than in Paris.</em><br /><br /></p><h2>✨ About the role ✨</h2><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">You will contribute to the <strong>cross-platform libraries</strong> powering Photoroom on iOS, Android, and the Web, directly impacting millions of users.</p></li><li><p style=\"min-height:1.5em\">You will architecture, develop and deliver complex features used by in-house app developers in exciting new technologies such as <strong>Rust, WebAssembly and wpgu</strong>.</p></li><li><p style=\"min-height:1.5em\">You will own your work from A to Z: From specification, implementation and integration on the target platform, you will work <strong>hand-in-hand</strong> with our product, web and mobile development teams to ensure a consistent Photoroom experience on all platforms.</p></li><li><p style=\"min-height:1.5em\">You will contribute to our <strong>live collaboration</strong> platform (like on Figma or Google Docs).</p></li><li><p style=\"min-height:1.5em\">You will work within a <strong>small multicultural team</strong> composed of ~120 passionate, friendly &amp; committed folks.<br /><br /></p></li></ul><h2><strong>✨ About you ✨</strong></h2><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">You have <strong>proven experience</strong> developing software with Rust. Experience in C/C++ is also very much appreciated. **In addition, you have some level of understanding of <strong>at least one</strong> higher-level language <em>(e.g., Swift, Kotlin, JavaScript/TypeScript, etc.)</em> and are not afraid to learn more.</p></li><li><p style=\"min-height:1.5em\"><em><strong>Bonus points</strong> if you have experience with one or more of the following: OpenGL, Metal, WebGPU, WebAssembly or if you have experience with Elixir or Erlang (not required but nice to have!)</em></p></li><li><p style=\"min-height:1.5em\">You have experience delivering <strong>cross-platform</strong> client-side code providing simple interfaces to handle complex tasks.</p></li><li><p style=\"min-height:1.5em\">You have a strong sense of ownership. You take initiative and you are at ease making product &amp; technical decisions.</p></li><li><p style=\"min-height:1.5em\">You have worked as part of a talented team and have experience in a fast-growing startup.</p></li><li><p style=\"min-height:1.5em\">You are fluent in English (French is not required!)<br /></p></li></ul><h2><strong>✨</strong> Hiring Process <strong>✨</strong></h2><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Screening call with Talent Manager or Hiring Manager</p></li><li><p style=\"min-height:1.5em\">Technical interview with a member of the cross-platform team</p></li><li><p style=\"min-height:1.5em\">Home technical assignment, followed by a review with the Hiring Manager</p></li><li><p style=\"min-height:1.5em\">Culture fit interview and meet the team!</p></li><li><p style=\"min-height:1.5em\">Reference check &amp; Offer</p></li></ul><h2>Diversity, Equity, Inclusion, and Belonging</h2><p style=\"min-height:1.5em\">We're committed to enabling everyone to feel included and valued at work. We believe our company and culture are strongest when composed of diverse experiences and backgrounds.</p><p style=\"min-height:1.5em\">That's also why we have flexible working hours, trust people to work remotely, and extended parental leave.</p><p style=\"min-height:1.5em\">All qualified applicants receive consideration for employment without regard to age, color, family, gender identity, marital status, national origin, physical or mental disability, sex (including pregnancy), sexual orientation, or any other characteristic protected by applicable laws.</p>",
+  "directApply": true,
+  "identifier": {
+    "@type": "PropertyValue",
+    "name": "Photoroom",
+    "value": "1be71f55-fa9a-41db-9457-1323f4053795"
+  },
+  "datePosted": "2026-03-18",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "Photoroom",
+    "sameAs": "https://www.photoroom.com/",
+    "logo": "https://app.ashbyhq.com/api/images/org-theme-logo/f86d9c5f-3cc3-4995-b9a6-0a6749dc5343/4f118c4b-f1a8-43ff-9e23-608fa467ba2e/b3ba7879-9974-465e-96af-c4f8fd162ba1.png"
+  },
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Paris",
+      "addressRegion": "France",
+      "addressCountry": "France"
+    }
+  },
+  "employmentType": "FULL_TIME",
+  "jobLocationType": "TELECOMMUTE",
+  "applicantLocationRequirements": [
+    {
+      "@type": "Country",
+      "name": "Spain"
+    },
+    {
+      "@type": "Country",
+      "name": "United Kingdom"
+    },
+    {
+      "@type": "Country",
+      "name": "Germany"
+    },
+    {
+      "@type": "Country",
+      "name": "France"
+    }
+  ]
+}

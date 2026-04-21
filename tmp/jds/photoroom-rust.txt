@@ -1,0 +1,31 @@
+Senior Software Engineer (Rust) 
+
+About usFounded in 2019 and part of Y Combinator's 2020 cohort, Photoroom  is the leading visual solution for e-commerce.
+
+We've raised Series B funding and reached 300+ million users worldwide, processing over 5 billion images annually and serving both small businesses and major enterprises like Amazon, DoorDash, and Decathlon through our mobile app, web platform, and API.
+
+We're a remote-friendly team of 100+ passionate builders giving e-commerce businesses superpowers to create visuals that help them grow, making the hardest parts of selling online disappear. We focus on craft, innovation, and collaboration, creating exceptional impact for e-commerce businesses worldwide.
+
+🤓 We are looking for a strong Rust software engineer to help us develop the cross-platform libraries that power our Android, iOS and Web apps to the next level! It is the opportunity to work in a central position in the engineering team, on all incarnations of a product used by millions of people, solve complex challenges, and make a decisive difference to our users and Photoroom.
+
+💰 90k - 120k* + Stock-Options/BSPCE🇪🇺 We are flexible: You can work from Germany, UK, Italy, France, Ireland, Portugal or Spain, with monthly Paris office visits (fully reimbursed)✈️ We offer substantial support for relocation (10k€ relocation bonus), including finding an apartment in Paris and supporting you with the visa procedure.🏖️ Socials - Bi-annual company retreats, weekly Happy Hour & Game Time🇬🇧 Photoroom is an international team and we work in English. We offer language lessons for those who need them (English & French).*We can go higher for outstanding profiles and adapt to the cost of living if it is higher than in Paris.
+
+✨ About the role ✨- You will contribute to the cross-platform libraries powering Photoroom on iOS, Android, and the Web, directly impacting millions of users.
+- You will architecture, develop and deliver complex features used by in-house app developers in exciting new technologies such as Rust, WebAssembly and wpgu.
+- You will own your work from A to Z: From specification, implementation and integration on the target platform, you will work hand-in-hand with our product, web and mobile development teams to ensure a consistent Photoroom experience on all platforms.
+- You will contribute to our live collaboration platform (like on Figma or Google Docs).
+- You will work within a small multicultural team composed of ~120 passionate, friendly & committed folks.
+
+✨ About you ✨- You have proven experience developing software with Rust. Experience in C/C++ is also very much appreciated. **In addition, you have some level of understanding of at least one higher-level language (e.g., Swift, Kotlin, JavaScript/TypeScript, etc.) and are not afraid to learn more.
+- Bonus points if you have experience with one or more of the following: OpenGL, Metal, WebGPU, WebAssembly or if you have experience with Elixir or Erlang (not required but nice to have!)
+- You have experience delivering cross-platform client-side code providing simple interfaces to handle complex tasks.
+- You have a strong sense of ownership. You take initiative and you are at ease making product & technical decisions.
+- You have worked as part of a talented team and have experience in a fast-growing startup.
+- You are fluent in English (French is not required!)
+
+✨ Hiring Process ✨- Screening call with Talent Manager or Hiring Manager
+- Technical interview with a member of the cross-platform team
+- Home technical assignment, followed by a review with the Hiring Manager
+- Culture fit interview and meet the team!
+- Reference check & Offer
+Diversity, Equity, Inclusion, and BelongingWe're committed to enabling everyone to feel included and valued at work. We believe our company and culture are strongest when composed of diverse experiences and backgrounds.That's also why we have flexible working hours, trust people to work remotely, and extended parental leave.All qualified applicants receive consideration for employment without regard to age, color, family, gender identity, marital status, national origin, physical or mental disability, sex (including pregnancy), sexual orientation, or any other characteristic protected by applicable laws.

@@ -1,0 +1,68 @@
+Mistral Cloud - Software Engineer, Fullstack/Frontend
+
+About Mistral 
+At Mistral AI, we believe in the power of AI to simplify tasks, save time and enhance learning and creativity. Our technology is designed to integrate seamlessly into daily working life. 
+We democratize AI through high-performance, optimized, open-source and cutting-edge models, products and solutions. Our comprehensive AI platform is designed to meet enterprise needs, whether on-premises or in cloud environments. Our offerings include le Chat, the AI assistant for life and work.
+We are a dynamic, collaborative team passionate about AI and its potential to transform society.
+Our diverse workforce thrives in competitive environments and is committed to driving innovation. Our teams are distributed between France, USA, UK, Germany and Singapore. We are creative, low-ego and team-spirited.
+Join us to be part of a pioneering company shaping the future of AI. Together, we can make a meaningful impact. See more about our culture on https://mistral.ai/careers.
+Role summary
+We’re looking for a passionate and skilled Fullstack Engineer to join our team. In this role, you’ll have the opportunity to shape the user experience of our Mistral Cloud Control Panel, working across our full product suite. Your contributions will directly enhance usability, making our platform more engaging, efficient, and intuitive for users.
+ More information on Mistral Cloud here: https://mistral.ai/products/compute
+What you will do
+Depending on your skills and field of expertise, you will be involved in key components of our technology, including:
+ 
+• Full Stack Development: Design, develop, and maintain scalable and robust features, ensuring seamless integration between front-end and back-end systems using modern frameworks.
+• User-Centric Design: Prioritize user experience and ensure that our products meet the needs and expectations of our user base.
+• Code Quality: Write clean, maintainable, and well-documented code, and participate in code reviews to uphold our high standards of quality.
+• Collaboration: Work closely with cross-functional teams, including engineers, product managers, and designers to deliver high-quality software solutions.
+• Problem-Solving: Tackle complex technical challenges and develop elegant, efficient solutions that improve performance and reliability. 
+• Innovation: Stay up-to-date with the latest technologies and trends in AI and software development, and apply them to enhance our products.
+About you
+• Degree in Computer Science, Software Engineering, or equivalent practical experience.
+• 5+ years of experience in high-standard UX/UI environments.
+• Proficient in TypeScript and NodeJS.
+• Experience in a Front-end framework like React, NextJS, Remix, VueJS
+• Knowledge of web libraries like Tanstack React Query, tRPC, Framer Motion, …
+• Strong problem-solving abilities and attention to detail.
+• Ability to own and deliver end-to-end features with minimal oversight.
+• Excellent communication skills and collaborative attitude.
+• Team-oriented, humble and eager to learn.
+Hiring Process
+• Introduction Call - 45 min
+• Technical Interview / Live Coding - 45 min
+• Technical Interview / System Design - 45 min
+• [OPTIONAL] Project Deep Dive - 60 min
+• Culture-fit Discussion - 30 min
+• References
+Our Culture
+We're driven to build a strong company culture and are looking for individuals with solid alignment with the following:
+• Reason with rigor
+• Are you audacious enough?
+• Make our customers succeed
+• Ship early and accelerate
+• Leave your ego aside 
+Engineering blog
+Our first Engineering blog post is live, you can check it out here !
+
+
+Location & Remote
+ 
+This role is primarily based at one of our European offices (Paris, France and London, UK). We will prioritize candidates who either reside in Paris or are open to relocating. We strongly believe in the value of in-person collaboration to foster strong relationships and seamless communication within our team.
+ 
+In certain specific situations, we will also consider remote candidates based in one of the countries listed in this job posting — currently France, UK, Germany, Belgium, Netherlands, Spain and Italy. In that case, we ask all new hires to visit our Paris office:
+•  for the first week of their onboarding (accommodation and travelling covered)
+•  then at least 3 days per month
+ 
+What we offer 
+ 
+💰 Competitive salary and equity
+🧑‍⚕️ Health insurance
+🚴 Transportation allowance
+🥎 Sport allowance
+🥕 Meal vouchers
+💰 Private pension plan
+🍼 Parental : Generous parental leave policy
+🌎 Visa sponsorship
+ 
+By applying, you agree to our Applicant Privacy Policy.
