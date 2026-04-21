@@ -1,0 +1,57 @@
+candidate:
+  full_name: "Dylan COUTO DE OLIVEIRA"
+  email: "dylan.coutodeoliveira@protonmail.com"
+  phone: "+33 7 68 20 59 28"
+  location: "Yquelon / Paris, France"
+  linkedin: "https://linkedin.com/in/dylan-cdo"
+  portfolio_url: "https://dylan-cdo.fr"
+  github: "https://github.com/Spocsk"
+  twitter: "" # optionnel
+
+target_roles:
+  primary:
+    - "Senior Software Engineer"
+    - "Fullstack Engineer Angular / NestJS"
+    - "Cloud-Native Engineer"
+  archetypes:
+    - name: "Fullstack Engineer"
+      level: "Senior"
+      fit: "primary"
+    - name: "Cloud / DevOps Engineer"
+      level: "Mid-Senior"
+      fit: "secondary"
+    - name: "Frontend Architect (Angular)"
+      level: "Senior"
+      fit: "adjacent"
+
+narrative:
+  headline: "Senior Fullstack Engineer spécialisé Angular / NestJS et architectures cloud-native"
+  exit_story: "5 ans d'expérience en développement fullstack avec un focus sur la conteneurisation, Kubernetes et l'automatisation CI/CD, de la conception à la production."
+  superpowers:
+    - "Architecture microservices Angular / NestJS"
+    - "CI/CD et automatisation des déploiements"
+    - "Conteneurisation Docker et orchestration Kubernetes"
+    - "Amélioration des performances et de la qualité logicielle"
+    - "Encadrement technique d'équipes"
+  proof_points:
+    - name: "Optimisation CI/CD"
+      url: ""
+      hero_metric: "Réduction de 30 % du temps de mise en production"
+    - name: "Architecture microservices météo"
+      url: ""
+      hero_metric: "Déploiement d’une plateforme scalable pour clients industriels"
+    - name: "Refactorisation front Angular"
+      url: ""
+      hero_metric: "Amélioration des performances et maintenabilité"
+
+compensation:
+  target_range: "50K€-65K€"
+  currency: "EUR"
+  minimum: "47K€"
+  location_flexibility: "Hybride (France) ou Full Remote"
+
+location:
+  country: "France"
+  city: "Manche"
+  timezone: "CET"
+  visa_status: "Citoyen français"
